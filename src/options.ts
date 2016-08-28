@@ -43,4 +43,9 @@ export interface AudioRecorderOptions {
   * Gets or sets the callback to be invoked to communicate some info and/or warning about the media or its playback.
   */
   infoCallback?: Function;
+
+  /**
+   * Whether to enable metering for audio plot component or other usage
+   */
+  metering?: boolean;
 }

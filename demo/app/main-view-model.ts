@@ -35,16 +35,18 @@ export class AudioDemo extends Observable {
 
             var recorderOptions = {
 
-                filename: `${audioFolder.path}/recording.${app.android ? 'mp3' : 'caf'}`,
+              filename: `${audioFolder.path}/recording.${app.android ? 'mp3' : 'caf'}`,
+              
+              metering: true,
 
-                infoCallback: () => {
-                    console.log();
-                },
+              infoCallback: () => {
+                  console.log();
+              },
 
-                errorCallback: () => {
-                    console.log();
-                    snackbar.simple('Error recording.');
-                }
+              errorCallback: () => {
+                  console.log();
+                  snackbar.simple('Error recording.');
+              }
             };
 
 
